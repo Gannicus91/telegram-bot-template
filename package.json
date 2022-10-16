@@ -9,10 +9,16 @@
     "start": "npm run build && node dist/index.js",
     "lint": "eslint . --ext .ts"
   },
-  "keywords": ["telegram", "telegraf", "bot"],
+  "keywords": [
+    "telegram",
+    "telegraf",
+    "bot"
+  ],
   "author": "m.givanyan",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "lodash-es": "^4.17.21",
     "telegraf": "^4.10.0"
   },
   "devDependencies": {
