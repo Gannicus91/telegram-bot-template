@@ -1,7 +1,7 @@
 {
-  "name": "30days-bot",
+  "name": "",
   "version": "1.0.0",
-  "description": "Telegram bot for 30 days marathon",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon",
@@ -14,7 +14,7 @@
     "telegraf",
     "bot"
   ],
-  "author": "m.givanyan",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
