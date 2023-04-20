@@ -1,6 +1,12 @@
 import { Telegraf } from 'telegraf';
+import LocalSession from 'telegraf-session-local';
+import {CustomContext} from './interface';
 
-const bot = new Telegraf(String(process.env.BOT_TOKEN));
+const localSession = new LocalSession({ database: 'user_data.json' });
+
+const bot = new Telegraf<CustomContext>(String(process.env.BOT_TOKEN));
+bot.use((localSession).middleware());
+
 bot.start((ctx) => ctx.reply('Welcome'));
 bot.help((ctx) => ctx.reply('Send me a sticker'));
 bot.on('sticker', (ctx) => ctx.reply('👍'));

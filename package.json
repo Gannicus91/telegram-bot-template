@@ -19,7 +19,8 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "lodash-es": "^4.17.21",
-    "telegraf": "^4.10.0"
+    "telegraf": "^4.10.0",
+    "telegraf-session-local": "^2.1.1"
   },
   "devDependencies": {
     "@types/node": "^18.11.0",
